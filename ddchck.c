@@ -26,7 +26,7 @@ int read_bytes(int fd, void * buf, size_t len) {
     return 0 ;
 }
 
-int main () {
+int main (int argc, char * argv[]) {
     // remove .ddtrace fifo file
 	if (unlink(".ddtrace") == 0) {
         printf(".ddtrace removed\n");
